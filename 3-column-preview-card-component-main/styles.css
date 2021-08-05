@@ -1,0 +1,133 @@
+.body{
+    margin: 0;
+    background-color: hsl(0, 0%, 95%);
+    
+}
+
+.wrapper{
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.card{
+    padding:32px 0 0 38px;
+    
+    width: 252px;
+    height: 450px;
+    background-color: hsla(0, 0%, 100%, 0.75);
+}
+
+#card-1{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+}
+
+#card-2{
+    background-color: hsl(184, 100%, 22%);
+}
+
+#card-3{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+.card h2{
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 40px;
+}
+
+.card .text p{
+    color:hsla(0, 0%, 100%, 0.75);
+    width: 209px;
+    line-height: 1.5;
+    font-size: 15px;
+    padding-bottom: 70px;
+    margin: 0;
+}
+
+.card .submit-button{
+    background-color: hsl(0, 0%, 95%);
+    width: 150px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+
+
+ #card-1 .submit-button:hover{
+    color:hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    background-color: hsl(31, 77%, 52%);
+}
+#card-2 .submit-button:hover{
+    color:hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    background-color: hsl(184, 100%, 22%);
+}
+ #card-3 .submit-button:hover{
+    color:hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    background-color: hsl(179, 100%, 13%);
+}
+
+#card-1 .submit-button{
+    color: hsl(31, 77%, 52%);
+}
+
+#card-2 .submit-button{
+    color: hsl(184, 100%, 22%);
+}
+
+#card-3 .submit-button{
+    color: hsl(179, 100%, 13%);
+}
+
+.attribution{
+    position: relative;
+    width: 100vw;
+    top: 90px;
+}
+
+
+/* Media-Queries */
+
+@media only screen and (max-width:612px) {
+    .wrapper{
+    
+        flex-wrap: wrap;
+    }
+
+    .card{
+        
+        height: 368px;
+    }
+
+    #card-1{
+        border-radius: 9px 9px 0 0;
+    }
+
+    #card-3{
+        border-radius: 0 0 9px 9px;
+    }
+
+    .card .text p{
+        margin-block-end: 0;
+        margin-block-start: 0;
+        padding-bottom: 20px;
+        width: 231px;
+    }
+
+    
+}
